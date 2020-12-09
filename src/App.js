@@ -1,25 +1,30 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import Tmdb from './Tmdb';
 
 // eslint-disable-next-line import/no-anonymous-default-export
 export default () => {
 
+    const [movieList, setMovieList] = useState([]);
+
     useEffect(() => {
         const loadAll = async () => {
             //Pegando a lista TOTAL
             let list = await Tmdb.getHomeList();
-            console.log(list);
+            setMovieList(list);
         }
 
         loadAll();
     }, []);
 
-
-
-
     return (
-        <div>
-            Clone do Netfix Web
+        <div className="page">
+           <section className="list">
+               {movieList.map((item, key) => (
+                   <div>
+                       {item.title}
+                   </div>
+               ))}
+           </section>
         </div>
     );
 }

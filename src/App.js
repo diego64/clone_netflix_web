@@ -16,7 +16,13 @@ export default () => {
             let list = await Tmdb.getHomeList();
             setMovieList(list);
 
-            //Pegando o Feature
+            //Pegando o Featured
+            let originals = list.filter(i => i.slug === 'originals');
+            let randomChosen = Math.floor(Math.random() * (originals[0].items.results.length -1));
+            let chosen = originals[0].items.results[randomChosen];
+            let chosenInfo = await Tmdb.getMovieInfo(chosen.id, 'tv')
+
+            console.log(chosenInfo);
         }
 
         loadAll();
@@ -26,7 +32,7 @@ export default () => {
         <div className="page">
 
         {featuredData && 
-            <featuredData item ={featuredData}/>
+            <FeaturedMovie item ={featuredData}/>
         }
             
            <section className="list">

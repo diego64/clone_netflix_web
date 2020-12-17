@@ -63,22 +63,25 @@ export default {
         ]
      },
 
-     getMovieInfo : async (movieId, type) =>{
+     getMovieInfo: async(movieId, type) => {
         let info = {};
+
         if(movieId) {
-            switch(type){
-                case 'movei':
+            // eslint-disable-next-line default-case
+            switch(type) {
+                case 'movie':
                     info = await basicFecth(`/movie/${movieId}?language=pt-BR&api_key=${API_KEY}`);
                 break;
-                 case 'tv':
-                    info = await basicFecth(`/tv/${movieId}?language=pt-BR&api_key=${API_KEY}`);
+                case 'tv': 
+                info = await basicFecth(`/tv/${movieId}?language=pt-BR&api_key=${API_KEY}`);
                 break;
-                default:
+                default: 
                     info = null;
                 break;
             }
         }
 
-         return info;
+        return info;
+
      }
 }

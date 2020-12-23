@@ -35,7 +35,7 @@ export default () => {
             <FeaturedMovie item ={featuredData}/>
         }
             
-           <section className="list">
+           <section className="lists">
                {movieList.map((item, key) => (
                    <div>
                        <MovieRow key={key} title={item.title} items={item.items} />

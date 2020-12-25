@@ -40,7 +40,7 @@ export default ({title, items}) => {
             <div className="movieRow--listarea">
                 <div className="movieRow--list" style={{
                     marginLeft: scrollX,
-                    width: items.results.length *150
+                    width: items.results.length * 150
                 }}>
                     {items.results.length > 0 && items.results.map((item, key) => (
                         <div key={key} className="movieRow--item">

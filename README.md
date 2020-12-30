@@ -6,6 +6,7 @@
   <a href="#rocket-tecnologias">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#-projeto">Projeto</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#-layout">Desenvolvimento</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-layout">Créditos pelas imagens</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
 </p>
 
 <br>
@@ -17,7 +18,7 @@
 </br>
 
 <p align="center">
-  <img alt="clone_nt2" src=".github/imagem1.PNG" width="100%">
+  <img alt="clone_nt2" src=".github/imagem2.PNG" width="100%">
 </p>
 
 </br>
@@ -39,3 +40,7 @@ O objetivo é clonar a página do Web (Home) da Netflix junto com algumas caract
 - Estilização da série ou filme em destaque com as suas respectivas informações
 - Estilização das listas
 - Animação de tela de carregamento
+
+## 🔦 Créditos pelas imagens
+
+Todas as imagens são de direitos da Netflix
